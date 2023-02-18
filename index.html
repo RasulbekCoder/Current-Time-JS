@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+    <title>Digital Clock</title>
+</head>
+<body>
+    <p id="vaqt"></p>
+    <button onclick="sot()">Try</button>
+
+    <script>
+        function sot(){
+            const a = new Date();
+        let soat = a.getHours();
+        let minut = a.getHours();
+        let sekund = a.getSeconds();
+        setInterval(sot, 1000);
+        document.getElementById("vaqt"). innerHTML = soat + ":" + minut + ":" + sekund;
+        document.getElementById("vaqt").style.width = "10em";  
+        }
+    </script>
+</body>
+</html>
